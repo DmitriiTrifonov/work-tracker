@@ -19,13 +19,18 @@ struct Day {
     let date: Date
     let type: DayType
     let work: Work?
-    
 }
 
 enum DayType: String {
-    case WorkingDay
-    case DayOff
-    case Holiday
-    case Vacation
-    case SickLeave
+    case workingDay
+    case dayOff
+    case holiday
+    case vacation
+    case sickLeave
+}
+
+enum WorkStatus: String {
+    case none
+    case working
+    case havingBreak
 }
