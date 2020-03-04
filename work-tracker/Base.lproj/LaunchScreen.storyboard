@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WORK TRACKER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-Rg-qPX">
-                                <rect key="frame" x="87" y="403" width="240" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORK TRACKER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-Rg-qPX">
+                                <rect key="frame" x="99" y="432.5" width="216" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -24,8 +24,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1fb-Rg-qPX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6rQ-N2-5Bz"/>
-                            <constraint firstItem="1fb-Rg-qPX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Djw-S9-I6a"/>
+                            <constraint firstItem="1fb-Rg-qPX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8zZ-hi-Gga"/>
+                            <constraint firstItem="1fb-Rg-qPX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zFA-jh-Qms"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

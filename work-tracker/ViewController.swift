@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             stopTime = Date()
             timer?.invalidate()
         } else {
+            self.timeLabel.text = "00:00:00"
             startTime = Date()
             timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (t) in
                 let interval = DateInterval(start: self.startTime ?? Date() , end: Date()).duration
@@ -40,7 +41,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Date())
         
     }
     
