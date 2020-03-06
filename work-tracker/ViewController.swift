@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     var startTime: Date?
     var stopTime: Date?
     var timer: Timer?
+    let today = Date()
     @IBOutlet var timeLabel: UILabel!
     
+    @IBOutlet var dateLabel: UILabel!
     @IBAction func startStopButton(_ sender: UIButton) {
         
         sender.isSelected = !sender.isSelected
@@ -41,7 +43,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "JOBICS"
         
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        let str = formatter.string(from: today)
+        self.dateLabel.text = str
+        
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 21)!]
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(test))
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 21)!], for: .normal)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 21)!], for: .selected)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(test))
+        navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 21)!], for: .normal)
+        navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 21)!], for: .selected)
+    }
+    
+    @objc func test() {
+        print("It works")
     }
     
     
